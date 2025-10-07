@@ -1,0 +1,15 @@
+{
+  "id": "invoice_classic",
+  "title": "Consulting Invoice",
+  "description": "Bill clients for services rendered.",
+  "category": "Finance",
+  "questions": [
+    { "id": "business_name", "label": "Business Name", "type": "text" },
+    { "id": "client", "label": "Client Name", "type": "text" },
+    { "id": "issue_date", "label": "Issue Date", "type": "date" },
+    { "id": "items", "label": "Line Items", "type": "list" },
+    { "id": "total", "label": "Total Due", "type": "text" },
+    { "id": "notes", "label": "Additional Notes", "type": "textarea" }
+  ],
+  "html": "<section class='invoice'><header><h1>{{business_name}}</h1><p>Invoice for {{client}}</p><p>Date: {{issue_date}}</p></header><table><tbody>{{#each items}}<tr><td>{{this}}</td></tr>{{/each}}</tbody></table><footer><p>Total Due: {{total}}</p><p>{{notes}}</p></footer></section>"
+}

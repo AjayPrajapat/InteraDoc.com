@@ -1,0 +1,15 @@
+{
+  "id": "resume_basic",
+  "title": "Professional Resume",
+  "description": "A clean resume focused on experience and skills.",
+  "category": "Career",
+  "questions": [
+    { "id": "name", "label": "Full Name", "type": "text" },
+    { "id": "title", "label": "Professional Title", "type": "text" },
+    { "id": "summary", "label": "Professional Summary", "type": "textarea" },
+    { "id": "experience", "label": "Key Experience", "type": "list" },
+    { "id": "skills", "label": "Top Skills", "type": "list" },
+    { "id": "contact", "label": "Contact Details", "type": "text" }
+  ],
+  "html": "<section class='resume'><h1>{{name}}</h1><h2>{{title}}</h2><p>{{summary}}</p><h3>Experience</h3><ul>{{#each experience}}<li>{{this}}</li>{{/each}}</ul><h3>Skills</h3><ul>{{#each skills}}<li>{{this}}</li>{{/each}}</ul><footer>{{contact}}</footer></section>"
+}

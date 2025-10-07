@@ -1,0 +1,14 @@
+{
+  "id": "service_agreement",
+  "title": "Service Agreement",
+  "description": "Outlines responsibilities between provider and client.",
+  "category": "Legal",
+  "questions": [
+    { "id": "provider_name", "label": "Service Provider Name", "type": "text" },
+    { "id": "client_name", "label": "Client Name", "type": "text" },
+    { "id": "services", "label": "Services Provided", "type": "textarea" },
+    { "id": "payment_terms", "label": "Payment Terms", "type": "textarea" },
+    { "id": "effective_date", "label": "Effective Date", "type": "date" }
+  ],
+  "html": "<section class='agreement'><h1>Service Agreement</h1><p>This Service Agreement (the \"Agreement\") is between {{provider_name}} (\"Provider\") and {{client_name}} (\"Client\") effective {{effective_date}}.</p><h2>Services</h2><p>{{services}}</p><h2>Payment Terms</h2><p>{{payment_terms}}</p><p>Signed by {{provider_name}} and {{client_name}}</p></section>"
+}
