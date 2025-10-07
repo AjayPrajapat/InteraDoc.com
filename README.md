@@ -63,3 +63,4 @@ The `/api/generate` endpoint converts rendered HTML output into:
 - **DOCX** – using the `docx` package to create paragraphs per sentence.
 
 These implementations provide a lightweight base that can be expanded with richer formatting or server-side rendering tools like Puppeteer when needed.
+# InteraDoc.com
